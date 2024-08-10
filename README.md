@@ -22,53 +22,53 @@ This is a Django-based project for managing book reviews. The project provides A
 
 Clone the repository to your local machine using the following command:
 
-\`\`\`bash
+```
 git clone https://github.com/your-username/your-repository-name.git
 cd your-repository-name
-\`\`\`
+```
 
 ### 2. Create and Activate a Virtual Environment
 
 It's recommended to use a virtual environment to manage dependencies.
 
-\`\`\`bash
+```bash
 python -m venv venv
-\`\`\`
+```
 
 Activate the virtual environment:
 
 - On Windows:
-  \`\`\`bash
+  ```bash
   venv\Scripts\activate
-  \`\`\`
+  ```
 - On macOS/Linux:
-  \`\`\`bash
+  ```bash
   source venv/bin/activate
-  \`\`\`
+  ```
 
 ### 3. Install Dependencies
 
-Install the required Python packages using \`pip\`:
+Install the required Python packages using `pip`:
 
-\`\`\`bash
+```bash
 pip install -r requirements.txt
-\`\`\`
+```
 
 ### 4. Set Up the Database
 
 Apply the migrations to set up the database schema:
 
-\`\`\`bash
+```bash
 python manage.py migrate
-\`\`\`
+```
 
 ### 5. Create a Superuser (Optional)
 
 If you want to access the Django admin site, create a superuser:
 
-\`\`\`bash
+```bash
 python manage.py createsuperuser
-\`\`\`
+```
 
 Follow the prompts to create the superuser account.
 
@@ -76,19 +76,19 @@ Follow the prompts to create the superuser account.
 
 Start the Django development server:
 
-\`\`\`bash
+```bash
 python manage.py runserver
-\`\`\`
+```
 
-The project should now be running at \`http://127.0.0.1:8000/\`.
+The project should now be running at `http://127.0.0.1:8000/`.
 
 ## API Endpoints
 
-- **List and Create Books**: \`GET /api/books/\` | \`POST /api/books/\`
-- **Retrieve, Update, and Delete a Book**: \`GET /api/books/<id>/\` | \`PUT /api/books/<id>/\` | \`DELETE /api/books/<id>/\`
-- **List and Create Reviews**: \`GET /api/reviews/\` | \`POST /api/reviews/\`
-- **Retrieve, Update, and Delete a Review**: \`GET /api/reviews/<id>/\` | \`PUT /api/reviews/<id>/\` | \`DELETE /api/reviews/<id>/\`
-- **Book Statistics**: \`GET /api/book-stats/\`
+- **List and Create Books**: `GET /api/books/` | `POST /api/books/`
+- **Retrieve, Update, and Delete a Book**: `GET /api/books/<id>/` | `PUT /api/books/<id>/` | `DELETE /api/books/<id>/`
+- **List and Create Reviews**: `GET /api/reviews/` | `POST /api/reviews/`
+- **Retrieve, Update, and Delete a Review**: `GET /api/reviews/<id>/` | `PUT /api/reviews/<id>/` | `DELETE /api/reviews/<id>/`
+- **Book Statistics**: `GET /api/book-stats/`
 
 ## Notes
 
